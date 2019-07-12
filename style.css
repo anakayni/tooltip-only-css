@@ -1,0 +1,45 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    line-height:150%;
+    margin:0;
+    padding: 0;
+    width: 80%;
+}
+
+.container{
+    margin-left: 5%;
+}
+
+.btn{
+    width: 62px;
+    display: block;
+    margin: 20px 0;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.42857143;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    background: #000000;
+    position: relative;
+}
+
+.tooltip::before{
+    color: #000000;
+    z-index: 1;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: turquoise;
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: none;
+}
+
+.tooltip:hover::before{
+    display: block;
+}

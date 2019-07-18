@@ -8,7 +8,7 @@ body{
 }
 
 .container{
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .btn{
@@ -31,6 +31,7 @@ body{
     color: #000000;
     z-index: 1;
     padding: 6px 12px;
+    margin: 3px;
     border-radius: 10px;
     background: turquoise;
     content: attr(data-tooltip);
@@ -42,4 +43,19 @@ body{
 
 .tooltip:hover::before{
     display: block;
+}
+
+.tooltip[data-position='right']::before{
+    top: 0;
+    left: 100%;
+}
+
+.tooltip[data-position='bottom']::before{
+    top: 100%;
+    left: 0 ;
+}
+
+.tooltip[data-position='left']::before{
+    top: 0;
+    left: -100%;
 }

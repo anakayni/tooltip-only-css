@@ -1,0 +1,20 @@
+{
+  "name": "tooltip-only-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "php -S 127.0.0.1:9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anakayni/tooltip-only-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anakayni/tooltip-only-css/issues"
+  },
+  "homepage": "https://github.com/anakayni/tooltip-only-css#readme"
+}
